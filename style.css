@@ -53,19 +53,3 @@ header.header-area h3{
     display: inline-block;
 }
 
-footer{
-    background: #434040;
-    color: white;
-    height: 60px;
-    margin:0 auto;
-    width: 60%;
-}
-
-footer p{
-    padding: 15px 4px;
-    text-align: center;
-}
-
-footer a{
-    color: white;
-}
