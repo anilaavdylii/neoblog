@@ -17,8 +17,8 @@
             
             </div>
             
-            <?php //the_content()?>
-            <?php the_excerpt()?>
+            <?php the_content()?>
+            <?php //the_excerpt()?>
 
             </article>
 
@@ -28,7 +28,7 @@
 ?>
 </section>
 <aside class="sidebar">
-    <?php dynamic_sidebar('new_sidebar');?>
+    <?php get_sidebar();?>
 </aside>
 
 

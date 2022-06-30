@@ -4,6 +4,7 @@
 //action hook
 function theme_setup(){
     add_theme_support("title-tag");
+    add_theme_support("custom-logo");
 }
 
 
@@ -29,4 +30,39 @@ function add_theme_scripts(){
 }
 
 add_action('wp_enqueue_scripts','add_theme_scripts');
-?>
+
+
+
+//register navigation menu
+function register_my_menu(){
+    register_nav_menus(
+        array(
+            'header-menu'=> __('Header Menu'),
+            'footer-menu'=> __('Footer Menu')           
+        )
+    );
+}
+
+add_action('init', 'register_my_menu');
+
+
+
+function my_register_widgets(){
+    register_sidebar(
+        array(
+            'id'=>'new_sidebar',
+            'name'=>__('New Sidebar'),
+            'description'=>__('A short description of the sidebar')
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id'=>'footer_sidebar',
+            'name'=>__('footer Sidebar'),
+            'description'=>__('A short description of the sidebar')
+        )
+    );
+}
+
+add_action('widgets_init','my_register_widgets');
