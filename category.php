@@ -1,32 +1,67 @@
-<?php get_header();?>
-
-<section class="post-area">
-<?php
-    if(have_posts()):
-        while(have_posts()):
-            the_post();?>
-
-            <article <?php post_class()?> id="post-<?php the_ID();?>">
-
-            <h1><a href="<?php the_permalink()?>"><?php the_title()?></a></h1>
-
-            <div class="post-meta">
-                <span class="date">Posted on: <?php the_date()?> at <?php the_time()?></span>
-                <span class="category"><div class="category">Posted in: <?php the_category()?></div></span>
-                <span class="author"><div class="author"><?php the_author()?></div></span>
-            
-            </div>
-            
-            <?php the_content()?>
-            <?php //the_excerpt()?>
-
-            </article>
-
-            <?php
-        Endwhile;
-    Endif;
+<?php 
+// get header-color.php 
+get_header("color");
 ?>
-</section>
 
+      <!-- categories-section -->
+      <section class="categories">
+        <div class="container">
+          <div class="flex flex-row flex-wrap">
+            <?php
+            // get template_part tag
+            get_template_part("templates/temp/categories","content")
+            ?>
+          </div>
+        </div>
+      </section>
+      <!-- End-categories -->
 
-<?php get_footer();?>
+      <!-- Post-are -->
+      <section class="post-area">
+        <div class="wrapper">
+          <!-- two-columns-layout -->
+          <div class="row">
+            <div class="col-8-lg col-12-md">
+              <!-- two-columns-layout -->
+              <div class="grid">
+                <?php
+                // get post-content.php
+                get_template_part("templates/temp/post", "content");
+                ?>
+              </div>
+
+              <!-- pagination area -->
+              <div class="row">
+                <div class="col-12-lg text-center">
+                  <div class="pagination">
+                    <?php
+                    echo paginate_links(array(
+                      'mid-size'=> 3,
+                      'prev_text'=> __('<span class="fa fa-arrow-left"></span>'),
+                      'next_text'=> __('<span class="fa fa-arrow-right"></span>')
+                    ));
+                    ?>
+                    <!-- <a href="#"><span>1</span></a>
+                    <a href="#"><span>2</span></a>
+                    <a href="#"><span>3</span></a>
+                    <a href="#"><span class="fa fa-arrow-right"></span></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4-lg col-12-md">
+              <?php
+              // get sidebar-template
+              get_sidebar();
+              ?>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End-post-area -->
+
+      <?php
+      // get footer.php 
+      get_footer();
+      ?>
+    

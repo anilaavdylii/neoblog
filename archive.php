@@ -1,10 +1,8 @@
 <?php 
-// get header-color.php 
-get_header("color");
+// get header.php 
+get_header();
 ?>
-
-
-     
+<h2>Archieve php</h2>
       <!-- categories-section -->
       <section class="categories">
         <div class="container">
@@ -21,50 +19,16 @@ get_header("color");
       <!-- Post-are -->
       <section class="post-area">
         <div class="wrapper">
-           
-          <!-- one-columns-layout -->
-          <?php if(have_posts()): ?>
-<?php while(have_posts()): the_post();?>
-
-<div class="article">
-
-                  <article class="single-post">
-                  <div class="post-title">
-                        <a href="<?php the_permalink(); ?>"
-                          ><span class="text-lg text-dark"
-                            ><?php echo the_title(); ?></span
-                          >
-                        </a>
-                      </div>
-                    <div class="post-thumbnail">
-                      <!-- <img
-                        src="./assets/images/article1.jpg"
-                        alt="article1"
-                        class="fluid"
-                      /> -->
-                      <?php
-                      if (has_post_thumbnail()):?>
-                      <img
-                        src="<?php echo get_the_post_thumbnail_url(); ?>"
-                        alt="article1"
-                        class="fluid"
-                      />
-                      <?php endif; ?>
-                    </div>
-                    <div class="post-content">
-                        <p class="para">
-                         <?php echo get_the_content(); ?>
-                        </p>
-                      </div>
-                  </article>
-                </div>
-
-<?php endwhile; ?>
-<?php else: ?>
-    <?php echo wpautop("Sorry No Post were Found");?>
-<?php endif; ?>
-
-
+          <!-- two-columns-layout -->
+          <div class="row">
+            <div class="col-8-lg col-12-md">
+              <!-- two-columns-layout -->
+              <div class="grid">
+                <?php
+                // get post-content.php
+                get_template_part("templates/temp/post", "content");
+                ?>
+              </div>
 
               <!-- pagination area -->
               <div class="row">

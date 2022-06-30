@@ -4,7 +4,6 @@ get_header("color");
 ?>
 
 
-     
       <!-- categories-section -->
       <section class="categories">
         <div class="container">
@@ -21,9 +20,10 @@ get_header("color");
       <!-- Post-are -->
       <section class="post-area">
         <div class="wrapper">
-           
-          <!-- one-columns-layout -->
-          <?php if(have_posts()): ?>
+          <!-- two-columns-layout -->
+          <div class="row">
+            <div class="col-lg-12">
+            <?php if(have_posts()): ?>
 <?php while(have_posts()): the_post();?>
 
 <div class="article">
@@ -63,33 +63,6 @@ get_header("color");
 <?php else: ?>
     <?php echo wpautop("Sorry No Post were Found");?>
 <?php endif; ?>
-
-
-
-              <!-- pagination area -->
-              <div class="row">
-                <div class="col-12-lg text-center">
-                  <div class="pagination">
-                    <?php
-                    echo paginate_links(array(
-                      'mid-size'=> 3,
-                      'prev_text'=> __('<span class="fa fa-arrow-left"></span>'),
-                      'next_text'=> __('<span class="fa fa-arrow-right"></span>')
-                    ));
-                    ?>
-                    <!-- <a href="#"><span>1</span></a>
-                    <a href="#"><span>2</span></a>
-                    <a href="#"><span>3</span></a>
-                    <a href="#"><span class="fa fa-arrow-right"></span></a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4-lg col-12-md">
-              <?php
-              // get sidebar-template
-              get_sidebar();
-              ?>
             </div>
           </div>
         </div>
