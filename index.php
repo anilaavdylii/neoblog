@@ -31,6 +31,9 @@
     <?php dynamic_sidebar('new_sidebar');?>
 </aside>
 
+<div class="pagination">
+   <?php the_posts_pagination()?>
+</div>
 
 
 <?php get_footer();?>
