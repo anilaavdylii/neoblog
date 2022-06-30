@@ -1,8 +1,4 @@
 <?php
-// Blog post
-
-// retrieve blogpost from databse
-
 ?>
 <?php if(have_posts()): ?>
 <?php while(have_posts()): the_post();?>
@@ -11,11 +7,6 @@
 
                   <article class="blog-post">
                     <div class="post-thumbnail">
-                      <!-- <img
-                        src="./assets/images/article1.jpg"
-                        alt="article1"
-                        class="fluid"
-                      /> -->
                       <?php
                       if (has_post_thumbnail()):?>
                       <img

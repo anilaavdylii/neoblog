@@ -15,13 +15,7 @@ $loop = new Wp_Query($args);
 
  <article class="new-post">
                       <div class="row">
-                        <!-- two columns -->
                         <div class="col-4-lg post-image">
-                          <!-- <img
-                            src="./assets/images/article1.jpg"
-                            class="fluid"
-                            alt="latestpost"
-                          /> -->
                           <?php
                       if (has_post_thumbnail()):?>
                       <img
@@ -33,12 +27,6 @@ $loop = new Wp_Query($args);
                         </div>
                         <div class="col-8-lg post-title">
                           <div class="cat">
-                            <!-- <a href="#" class="text-sm text-gray category"
-                              >People</a
-                            >
-                            <a href="#" class="text-sm text-gray category"
-                              >Travel</a
-                            >-->
                             <?php 
                             $categories =get_the_category();
                             if(!empty($categories)){

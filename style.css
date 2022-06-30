@@ -15,13 +15,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 
-/* import css files */
 @import url(./assets/css/_variables.css);
-/* global css file */
 @import url(./assets/css/_global.css);
-/* grid-css file */
 @import url(./assets/css/_grid.css);
-/* include header file */
 @import url(./assets/css/_header.css);
 html,
 body {
@@ -33,10 +29,8 @@ body {
 
 body {
   font: normal 900 1rem var(--font-Rale);
-  /* background: var(--dark); */
 }
 
-/* styling banner-area */
 
 .main-area .banner-area .banner {
   position: absolute;
@@ -55,7 +49,6 @@ body {
   font: normal 800 1.5rem/1rem var(--font-Mont);
 }
 
-/* categories section */
 
 .main-area .categories {
   padding: 3rem;
@@ -78,7 +71,6 @@ body {
   box-shadow: none;
 }
 
-/* post-area section */
 .main-area .post-area {
   margin: 0 10%;
 }
@@ -115,7 +107,6 @@ body {
   background: var(--gray);
 }
 
-/* sidebar area */
 
 aside.sidebar .latest-post .new-post {
   border-bottom: 1px solid var(--border);
@@ -136,7 +127,6 @@ aside.sidebar .latest-post .new-post .post-image img {
   border-radius: 5rem;
 }
 
-/* sidebar search area */
 
 aside.sidebar .search-area {
   padding: 8rem 0;
@@ -147,7 +137,6 @@ aside.sidebar .search-area .search .form-group {
   box-shadow: var(--shadow2);
 }
 
-/* popular tags */
 
 aside.sidebar .popular-tags {
   padding: 4rem 0;
@@ -173,7 +162,6 @@ footer.footer-area .popular-tags .tags a:hover span {
   border: 1px solid var(--border);
 }
 
-/* pagination */
 
 .main-area .pagination {
   background: var(--light);
@@ -193,7 +181,6 @@ footer.footer-area .popular-tags .tags a:hover span {
   color: var(--light);
 }
 
-/* footer area */
 
 footer.footer-area {
   background: var(--dark);
@@ -232,9 +219,6 @@ footer.footer-area .popular-tags .tags a {
   margin-top: 2rem;
 }
 
-/* wp theme styling */
-
-/* single post */
 
 .post-area .single-post .post-title {
   padding: 2rem 0;

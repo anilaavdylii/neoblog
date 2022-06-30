@@ -25,7 +25,6 @@ function fn_theme_scripts(){
 }
 add_action("wp_enqueue_scripts","fn_theme_scripts");
 
-// adding new features to wp-theme
 
 function fn_theme_supports(){
     add_theme_support("title-tag");
@@ -36,7 +35,6 @@ function fn_theme_supports(){
 
 add_action("after_setup_theme", "fn_theme_supports");
 
-// register nav menu
 
 function fn_nav_menu(){
     register_nav_menus(array(

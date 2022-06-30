@@ -8,7 +8,6 @@
 
   </head>
   <body>
-    <!-- Header area -->
     <header class="header-area">
     <div class="nav-color">
     <div class="container">
@@ -25,14 +24,11 @@
            ?>
           </a>
 
-          <!-- toogle menu -->
           <button class="toggle-button">
             <span class="fas fa-hamburger"></span>
           </button>
-          <!-- Navigation-items -->
           <div class="collapse" id="toggle-collapse">
               <?php
-            // display menu
             if(has_nav_menu("primary-menu")){
                 wp_nav_menu(array(
                     "theme_location" => "primary-menu",
@@ -41,46 +37,16 @@
                 ));
             }
               ?>
-            <!-- <ul class="navbar-nav mr-auto">
-              <li class="nav-link">
-                <a href="#" class="link text-light">Home</a>
-              </li>
-              <li class="nav-link">
-                <a href="#" class="link text-light">People</a>
-              </li>
-              <li class="nav-link">
-                <a href="#" class="link text-light">Design</a>
-              </li>
-              <li class="nav-link">
-                <a href="#" class="link text-light">Travel</a>
-              </li>
-              <li class="nav-link">
-                <a href="#" class="link text-light">About Us</a>
-              </li>
-            </ul> -->
 
             <div class="search">
                 <?php
-                // get search form template file using get_search_form
                 get_search_form();
                 ?>
-              <!-- <form action="" class="form-group">
-                <input
-                  type="search"
-                  class="input-control mr-sm-2"
-                  placeholder="search"
-                />
-                <button class="btn btn-submit" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form> -->
             </div>
           </div>
         </nav>
       </div>
     </div>
     </header>
-    <!-- End-header area -->
-
-    <!-- Main site -->
+   
     <main class="main-area">

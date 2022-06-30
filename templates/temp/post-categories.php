@@ -9,7 +9,3 @@ if(!empty($categories)){
 }
 ?>
 
-
-<!-- <a href="#"  ><span class="text-sm uppercase text-gray">People</span ></a>
-<a href="#"><span class="text-sm uppercase text-gray" >Travel</span></a >-->
-                        
