@@ -10,7 +10,8 @@
   <body>
     <!-- Header area -->
     <header class="header-area">
-      <div class="container">
+    <div class="nav-color">
+    <div class="container">
         <nav class="nav">
           <a href="#" class="link nav-brand text-light">
            <?php
@@ -77,6 +78,7 @@
           </div>
         </nav>
       </div>
+    </div>
     </header>
     <!-- End-header area -->
 
