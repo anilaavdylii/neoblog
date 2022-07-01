@@ -36,15 +36,7 @@
             </div>
           </section>
         </div>
-        <div class="col-4-lg col-4-md col-12-sm"></div>
-        <section class="recent-post">
-          <a href="#" class="text-md text-light">Recent Post</a>
-          <div class="posts flex flex-row flex-wrap">
-           <?php 
-        get_template_part("templates/temp/recent", "post");
-           ?>
-          </div>
-        </section>
+       
       </div>
       <div class="col-4-lg col-4-md col-12-sm">
         <section class="popular-tags">
@@ -56,13 +48,10 @@
           </div>
         </section>
       </div>
-      <!-- </div> -->
-      <div class="rights text-center text-gray">
-        Wordpress Themes by
-        <a href="<?php echo home_url("/"); ?>" class="text-primary">Ali Dhuniya</a> &copy; <?php the_date("Y"); ?>
-      </div>
+    
+      
     </footer>
-    <!-- End-footer area -->
+ 
 
     
   </body>

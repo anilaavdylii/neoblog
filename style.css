@@ -51,7 +51,7 @@ body {
 
 
 .main-area .categories {
-  padding: 3rem;
+  padding: 8rem;
 }
 .main-area .categories a > span {
   border: 1px solid var(--light);
