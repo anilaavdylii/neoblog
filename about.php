@@ -2,8 +2,6 @@
 <?php
 /**
  * Template Name: About Page
- * The template for displaying contact form, only an example template.
- * No stylesheet or javascript includes on this example
  *
  */
 
@@ -11,7 +9,6 @@
 
 <header class='masthead'>
   <p class='masthead-intro'>HELLO THERE!</p>
-  <h1 class='masthead-heading'>Welcome to my blog!</h1>
 </header>
 
 <section class="introduction-section">

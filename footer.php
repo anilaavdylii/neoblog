@@ -38,6 +38,18 @@
         </div>
        
       </div>
+      <div class="col-4-lg col-4-md col-12-sm"></div>
+        <!-- recent post-area -->
+        <section class="recent-post">
+          <a href="#" class="text-md text-light">Recent Post</a>
+          <div class="posts flex flex-row flex-wrap">
+           <?php 
+        //    get template file recent-post.php
+        get_template_part("templates/temp/recent", "post");
+           ?>
+          </div>
+        </section>
+      </div>
       <div class="col-4-lg col-4-md col-12-sm">
         <section class="popular-tags">
           <a href="#" class="text-md text-light">Popular Tags</a>

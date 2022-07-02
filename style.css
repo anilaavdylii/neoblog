@@ -231,3 +231,13 @@ footer.footer-area .popular-tags .tags a {
 header.header-area .nav-color{
   background: var(--dark);
 }
+
+
+.recent-post{
+  padding-left: 1.5rem;
+    padding-top: 0.9rem;
+   flex: 25%;
+    max-width: 25%;
+    padding: 0;
+  
+  }

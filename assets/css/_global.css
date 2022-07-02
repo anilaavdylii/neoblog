@@ -83,16 +83,23 @@ p.para {
 
 .content-footer,
 .masthead-heading,
-.masthead-intro {
+.masthead-intro
+.masthead-intro-home {
   text-align: center;
 }
 
 .masthead {
-  padding: 6em 0;
+  padding: 10em 0;
   background-image: url('https://i.imgur.com/yGmrlyg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  border-top: solid 1em #e0d0dc;
+}
+
+.masthead-home {
+  padding: 10em 0;
+  background-image: url('https://i.pinimg.com/564x/c2/27/4b/c2274bdf4a87b05db20d468b93aa1af8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .masthead-intro {
@@ -101,6 +108,15 @@ p.para {
     /* Typography Declarations */
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 0.6em;
+}
+.masthead-intro-home {
+  /* Layout Declarations */
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  font-family: "Snell Roundhand", Georgia	;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  padding-left: 41%;
 }
 
 .masthead-heading {
@@ -114,6 +130,18 @@ p.para {
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
+.masthead-heading-home {
+  /* Layout Declarations */
+  color: #b6adb4;
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
 
 .introduction-section,
 .location-section,
@@ -262,3 +290,27 @@ a {
 .box:hover img:nth-child(1) {
   transform: rotateY(-180deg);
 }
+
+
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  width: 100%;
+}
+
+
+.post-thumbnail{
+  text-align: center;
+}
+
+
+.post-title{
+  text-align: center;
+}
+

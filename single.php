@@ -68,11 +68,7 @@ get_header("color");
                 </div>
               </div>
             </div>
-            <div class="col-4-lg col-12-md">
-              <?php
-              get_sidebar();
-              ?>
-            </div>
+          
           </div>
         </div>
       </section>
