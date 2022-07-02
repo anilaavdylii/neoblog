@@ -15,41 +15,9 @@
          
            ?>
             </div>
-            <p class="para">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
-              expedita! Dicta ipsa debitis quia rerum obcaecati autem facere,
-              eaque consectetur.
-            </p>
-            <div class="social-media">
-              <a href="#" class="text-primary"
-                ><span class="fab fa-facebook"></span
-              ></a>
-              <a href="#" class="text-primary"
-                ><span class="fab fa-instagram"></span
-              ></a>
-              <a href="#" class="text-primary"
-                ><span class="fab fa-twitter"></span
-              ></a>
-              <a href="#" class="text-primary"
-                ><span class="fab fa-youtube"></span
-              ></a>
-            </div>
-          </section>
-        </div>
-       
+           
       </div>
-      <div class="col-4-lg col-4-md col-12-sm"></div>
-        <!-- recent post-area -->
-        <section class="recent-post">
-          <a href="#" class="text-md text-light">Recent Post</a>
-          <div class="posts flex flex-row flex-wrap">
-           <?php 
-        //    get template file recent-post.php
-        get_template_part("templates/temp/recent", "post");
-           ?>
-          </div>
-        </section>
-      </div>
+     
       <div class="col-4-lg col-4-md col-12-sm">
         <section class="popular-tags">
           <a href="#" class="text-md text-light">Popular Tags</a>
