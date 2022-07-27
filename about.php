@@ -7,7 +7,7 @@
  get_header("color");?>
 
 <header class='masthead'>
-  <p class='masthead-intro'><?php the_title(  ); ?></p>
+  <p class='masthead-intro'><?php the_title( ); ?></p>
 </header>
 
 <section class="introduction-section">

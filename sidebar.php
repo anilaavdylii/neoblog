@@ -8,14 +8,6 @@
                   </div>
                 </section>
 
-                <section class="search-area">
-                  <div class="search">
-                    <h3 class="text-md text-dark">Search</h3>
-                    <?php
-                     get_search_form(); ?>
-                  </div>
-                </section>
-
                 <section class="popular-tags">
                   <h4 class="text-md">
                     Popular Tags

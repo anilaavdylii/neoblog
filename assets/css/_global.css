@@ -93,11 +93,12 @@ p.para {
   background-image: url('https://i.imgur.com/yGmrlyg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .masthead-home {
   padding: 10em 0;
-  background-image: url('https://i.pinimg.com/564x/c2/27/4b/c2274bdf4a87b05db20d468b93aa1af8.jpg');
+  background-image: url('../images/60286.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -21,7 +21,7 @@ $loop = new WP_Query($args);
 
     <?php if($count % 2) : ?>
             <div class="column">
-              <div class="post-image">
+              <div class="post-image" >
                   <?php if(has_post_thumbnail()) : ?>
                 <img
                   src="<?php echo get_the_post_thumbnail_url();?>"

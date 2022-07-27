@@ -15,7 +15,7 @@ $loop = new Wp_Query($args);
 
  <article class="new-post">
                       <div class="row">
-                        <div class="col-4-lg post-image">
+                        <div class="col-2-lg post-image">
                           <?php
                       if (has_post_thumbnail()):?>
                       <img
@@ -25,7 +25,7 @@ $loop = new Wp_Query($args);
                       />
                       <?php endif; ?>
                         </div>
-                        <div class="col-8-lg post-title">
+                        <div class="col-6-lg post-title">
                           <div class="cat">
                             <?php 
                             $categories =get_the_category();
