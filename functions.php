@@ -31,9 +31,12 @@ function fn_theme_supports(){
     add_theme_support("post-thumbnails");
     add_theme_support("html5", array("search-form"));
     add_theme_support("custom-logo");
+    add_theme_support('navigation-widgets');
 }
 
 add_action("after_setup_theme", "fn_theme_supports");
+
+add_theme_support( 'customize-selective-refresh-widgets' );
 
 
 function fn_nav_menu(){
@@ -56,5 +59,26 @@ function fn_custom_excerpt_length($length){
     return 15;
 }
 add_filter("excerpt_length","fn_custom_excerpt_length" );
+
+
+  //register menu
+  register_nav_menus([
+    'main-menu' => esc_html__('Main menu', 'neoubt'),
+]);
+
+//init widgets
+function wp_neoubt_init_widgets(){
+    register_sidebar([
+        'id'=>'main-sidebar',
+        'name'=> __('Main sidebar'),
+        'description'=>__('Description main sidebar'),
+        'before_widget'=> '<section class="widget">',
+        'after_widget'=> '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title'=> '</h2>'
+    ]);
+}
+
+add_action('widgets_init','wp_neoubt_init_widgets')
 
 ?>

@@ -30,8 +30,8 @@
         </div>
       </section>
 
-    
 
+      
       <section class="post-area">
         <div class="wrapper">
           <div class="row">

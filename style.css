@@ -241,3 +241,12 @@ header.header-area .nav-color{
     padding: 0;
   
   }
+
+
+  .widget {
+    margin: 0 0 1.5em;
+  }
+  
+  .widget select {
+    max-width: 100%;
+  }
